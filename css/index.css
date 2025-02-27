@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	 font-family: 'Inter', sans-serif;;
+	font-size: 14px;
+}
+
+header {
+	background-color: #333;
+	height: 5em;
+	color: #FFF;
+	margin-bottom: 2em;
+	padding: 0.6px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+	
+}
+
+.titulo {
+	font-size: 50px;
+	font-family: 'Inter', sans-serif;
+}
+
+header h1 {
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Inter', sans-serif;
+}
+
+header h2 {
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+header .container:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.container {
+	width: 60%;
+	height: 100%;
+	margin: 15px auto;
+}
+
+section {
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2 {
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table {
+	width: 100%;
+	margin-bottom: .5em;
+	table-layout: fixed;
+
+}
+
+td,
+th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th {
+	font-weight: 'Inter', sans-serif;
+	background-color: #57d52d;
+}
+
+label {
+	color: #f5f5f5;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo {
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio {
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo {
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+	color: rgb(255, 255, 255);
+}
+
+button {
+	padding: 1.0em 0em;
+	border: 10px;
+	border-radius: 13px;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+	color: #050505;
+	background-color: #0c8cd3;
+	border-color: #04324c;
+	width: 200px;
+  	height: 1.0;
+	text-align: center;
+}
+
+
+button:active {
+	margin-top: 0px;
+	border: 0;
+}
+
+button[disabled=disabled],
+button:disabled {
+	background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente {
+	margin-top: 30px;
+
+}
+
+.campo-invalido {
+	border: 1px solid red;
+}
+
+.paciente-invalido {
+	background-color: rgb(241, 163, 7);
+}
+
+#titulo-form {
+	font-size: 30px;
+	align-items: center;
+	text-align: center;
+	background-color: #0c8cd3;
+	border-radius: 10px 20px 30px 40px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+    line-height: 40px;
+}
+
+#form-adiciona {
+	padding: 20px;
+	font-size: 20px;
+	background-color: #333;
+	border: 500px;
+	border-radius: 15px;
+	text-align: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.campo.campo-medio {
+	line-height: 2px;
+	border-radius: 9px;
+	width: 190px;
+}
+
+.Preencher__Campos{
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+}
+
+#mensagens-erro{
+	color: red;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s;
+	background-color: rgb(213, 65, 65);
+}
+
+#filtrar-tabela {
+	width: 400px;
+	height: 40px;
+	border: 2px solid #ccc;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+	margin-bottom: 10px;
+	text-align: start;
+	color: #050505;
+}
+
+.label-filtre {
+	display: block; 
+    color: black; 
+    font-size: 16px; 
+}
+
+.invisivel{
+    display: none;
+}
+
+.botao__Buscar {
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	background-color: #57d52d;
+}
+
+#erro-ajax{
+	color: red;
+}

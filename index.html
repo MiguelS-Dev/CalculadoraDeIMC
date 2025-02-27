@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de IMC</title>
+	<link rel="icon" href="img/pngegg (4).png" type="image/web">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<img src="./img/pngegg (3).png">
+			<h1 class="titulo">Calculadora de IMC</h1>
+		</div>
+	</header>
+
+	<main>
+		<section class="container">
+			<h2>Paciente</h2>
+
+			<label for="filtrar-tabela" class="label-filtre">Buscar:</label>
+			<input type="text" id="filtrar-tabela" placeholder="Digite para Pesquisar...">
+
+			<table id="tabela-geral">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Peso(kg)</th>
+						<th>Altura(m)</th>
+						<th>Gordura Corporal(%)</th>
+						<th>IMC</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pacientes">
+					<tr class="paciente" id="primeiro-paciente">
+						<td class="info-nome">Paulo</td>
+						<td class="info-peso">100</td>
+						<td class="info-altura">2.00</td>
+						<td class="info-gordura">10</td>
+						<td class="info-imc">0</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<button id="Buscar-pacientes" class="botao__Buscar">Buscar paciente</button>
+			<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+		</section>
+	</main>
+	<!-- ... -->
+	<section class="container">
+		<h2 id="titulo-form">Adicionar novo Paciente</h2>
+		<h3 class="Preencher__Campos">Preecher os Campos a Seguir:</h3>
+		<br>
+		<ul id="mensagens-erro">
+
+		</ul>
+		<form id="form-adiciona">
+			<div class="grupo">
+				<label for="nome">Nome:</label>
+				<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente"
+					class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="peso">Peso:</label>
+				<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente"
+					class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="altura">Altura:</label>
+				<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente"
+					class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="gordura">% de Gordura:</label>
+				<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente"
+					class="campo campo-medio">
+			</div>
+			<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+		</form>
+	</section>
+</body>
+<script src="/main.js"></script>
+<script src="/js/form.js"></script>
+<script src="/js/remover.js"></script>
+<script src="/js/buscar.js"></script>
+<script src="/js/buscarPacientes.js"></script>
+</html>
